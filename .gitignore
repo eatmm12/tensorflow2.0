@@ -1,3 +1,10 @@
+*.out
+.vscode
+.idea
+__pycache__
+# Pycharm
+.idea/
+*.xml
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
