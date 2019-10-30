@@ -4,9 +4,15 @@
 
 import tensorflow as tf
 
+import random
 # print(tf.__version__)
 #
 # print(tf.test.is_gpu_available())
+
+a = random.sample(range(1, 33), 6)
+b = random.randint(1, 16)
+print(a)
+print(b)
 
 mnist = tf.keras.datasets.mnist
 
@@ -25,5 +31,5 @@ model.compile(optimizer='adam',
               metrics=['accuracy']
               )
 
-model.fit(x_train, y_train, epochs = 5)
-model.evaluate(x_test, y_test)
+# model.fit(x_train, y_train, epochs = 5)
+# model.evaluate(x_test, y_test)
