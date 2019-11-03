@@ -1,0 +1,12 @@
+Building the neural network requires configuring the layers of the model, then compiling the model.
+These are added during the model's compile step:
+    Loss function —This measures how accurate the model is during training. You want to minimize this function to "steer" the model in the right direction.
+    Optimizer —This is how the model is updated based on the data it sees and its loss function.
+    Metrics —Used to monitor the training and testing steps. The following example uses accuracy, the fraction of the images that are correctly classified.
+
+A model needs a loss function and an optimizer for training. Since this is a binary classification problem and the model outputs a probability (a 
+single-unit layer with a sigmoid activation), we'll use the binary_crossentropy loss function.
+
+This isn't the only choice for a loss function, you could, for instance, choose mean_squared_error. But, generally, binary_crossentropy is better for 
+dealing with probabilities—it measures the "distance" between probability distributions, or in our case, between the ground-truth distribution and 
+the predictions.
